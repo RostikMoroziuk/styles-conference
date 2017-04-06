@@ -1,0 +1,407 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+header{
+  background-color: #293f50;
+  padding: 0 15% 2% 15%;
+}
+header:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+header .event-name{
+  text-transform: uppercase;
+  float: left;
+  border-top: 5px solid #648880;
+  font-weight: normal;
+  font-size: 2.5em;
+  padding-top: 5%;
+  margin: 0;
+  width: 260px;
+}
+.event-name a{
+  text-decoration: none;
+  color: white;
+}
+header .head-info{
+  float: right;
+  padding-top: 5%;
+}
+.head-info .date{
+  color: #648880;
+  text-align: right;
+  white-space: nowrap;
+}
+.head-info .navigation{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.navigation li{
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+  line-height: 3em;
+}
+.navigation li:last-child{
+  margin-right: 0;
+}
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+.event-name a:hover,
+.navigation a:hover{
+  color: #648880;
+}
+
+.main-info,
+.main-section{
+  padding: 3% 15% 3% 15%;
+  text-align: center;
+  background-color: #293f50;
+}
+.main-info .main-header,
+.main-section .page-name{
+  padding: 0;
+  margin: 0;
+  color: #648880;
+  font-size: 2.5em;
+}
+.main-info .main-description,
+.main-section .page-description{
+  line-height: 2em;
+  font-size: 1.5em;
+}
+.btn{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 15px 10px;
+}
+a .btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+a .btn:hover{
+  background-color: white;
+  border: 1px solid #648880;
+  color: #648880;
+}
+main section:nth-child(2){
+  padding: 5% 15%;
+}
+main section:nth-child(2):after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.short-description{
+  float: left;
+  width: 30%;
+  min-width: 200px;
+  margin-right: 5%;
+  position: relative;
+}
+.short-description:last-child{
+  margin-right: 0;
+}
+main:after{
+  clear: both;
+  content: "";
+  display: table;
+}
+.short-description .name{
+  color: #5C7384;
+  text-transform: uppercase;
+  text-align: left;
+}
+.short-description .link{
+  color: #3F586B;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.link img{
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 0 5px #3F586B;
+}
+.link h3{
+
+}
+.link:hover{
+  color: #6A8081;
+}
+.short-description .text{
+  color: #5C7384;
+}
+
+.footer{
+  background-color: #293f50;
+  font-size: 15px;
+  padding: 3% 15%;
+}
+.footer h3, .footer ul{
+  padding: 0;
+  margin: 0;
+}
+.footer li{
+  padding: 0;
+  line-height: 1.4em;
+}
+.footer .copyright{
+  float: left;
+  color: #648880;
+}
+.footer .navigation{
+  float: right;
+}
+footer:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*page speakers*/
+.main-section{
+  background-image: linear-gradient(to right, #69E672, #BBC1BC);
+}
+.main-section .page-name{
+  font-weight: 100;
+  color: #507070;
+}
+.main-section .page-description{
+  font-weight: 100;
+  font-size: 1.4em;
+  color: #507070;
+}
+
+.speakers{
+  padding: 3% 15%;
+}
+.speakers .speaker{
+  color: #507070;
+  margin-bottom: 8%;
+  overflow: auto;
+}
+.speakers .speaker:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.speakers .speaker:last-child{
+  margin-bottom: 0;
+}
+.speaker .info{
+  float: left;
+  width: 70%;
+}
+.speaker .info h4{
+  color: rgba(80, 112, 112, 0.8);
+}
+.speaker .contact{
+  float: right;
+  width: 25%;
+  min-width: 205px;
+  position: relative;
+  margin: 0;
+  top: 80px;
+}
+.speaker p{
+  color: #305050;
+}
+.contact img{
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top:-50%;
+  width:50%;
+  z-index: 2;
+}
+.contact figcaption{
+  padding: 30% 0% 10% 0%;
+  border: 1px solid rgba(80, 112, 112, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+}
+.contact a{
+  display: inline-block;
+  text-decoration: none;
+  color: #305050;
+  margin-bottom: 5px;
+}
+.contact a:last-child{
+  margin-bottom: 0;
+}
+.contact a:hover{
+  color: rgba(48, 80, 80, 0.7);
+}
+
+/*page schedule*/
+.tables{
+  color: #305050;
+  padding: 2% 15% 5%;
+  font-size: 1.3em;
+}
+.table{
+  margin-bottom: 3%;
+  border-collapse: collapse;
+  width:100%;
+}
+.table:last-child{
+  margin-bottom:0;
+}
+.table tr{
+  vertical-align: middle;
+}
+.table th,
+.table td{
+  padding: 2% 5% 2% 0;
+  box-sizing:border-box;
+  border-bottom: 1px solid rgba(80, 112, 112, 0.2);
+}
+.table .caption{
+  font-weight: 900;
+}
+.table .caption,
+.table .time{
+  text-align: right;
+  border-bottom: 0px solid #000;
+}
+.table .time{
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+.table .event,
+.table .time{
+  color: rgba(80, 112, 112, 0.5);
+}
+.table td.event{
+  font-size:0.8em;
+}
+.table .info{
+  text-align: left;
+}
+.table a{
+  text-decoration: none;
+  color: #305050;
+}
+.speach-name{
+  font-size:0.8em;
+}
+.table a:hover{
+  color: rgba(80, 112, 112, 0.5);
+}
+.table h4{
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  color: rgba(80, 112, 112, 1);
+}
+
+/*page venue*/
+.theatre,
+.hotel{
+  padding: 5% 15% 0;
+  color: #305050;
+  height: 100%;
+}
+.hotel{
+  padding-bottom: 5%;
+}
+.theatre:after,
+.hotel:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.theatre .contact,
+.hotel .contact{
+  float: left;
+  text-align: left;
+  width: 20%;
+  padding: 0;
+  min-width: 100px;
+}
+.contact h4{
+  margin-top: 0;
+}
+.theatre iframe,
+.hotel iframe{
+  float: right;
+  width: 70%;
+  height: 40vh;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.theatre .contact a,
+.hotel .contact a{
+  text-decoration: underline;
+  color: #305050;
+}
+
+/*register page*/
+.registration{
+  padding: 5% 15%;
+  color: #507070;
+}
+.registration:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.registration .info{
+  width: 70%;
+  float: left;
+  font-size: 1.1em;
+  min-width: 180px;
+}
+.info h3{
+  margin-top: 0;
+}
+.info h3+h4{
+  color: rgba(80, 112, 112, 0.5);
+}
+.info li{
+  list-style-type: square;
+}
+.registration .forms{
+  float: right;
+  position: relative;
+}
+.forms .form{
+  margin-bottom: 20px;
+}
+.purchase{
+  background-color: #293f50;
+  color: white;
+  text-transform: uppercase;
+}
+.purchase:hover{
+  background-color: #648880;
+  color: #293f50;
+}
+.input{
+  margin-top: 5px;
+  border: 1px solid rgba(80, 112, 112, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+.area{
+  width: 100%;
+}
+.form textarea{
+  height: 70px;
+}
